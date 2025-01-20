@@ -1,21 +1,9 @@
 import axios from 'axios';
 
-const clientId = import.meta.env.VITE_CLIENT_ID;
-
-const rawgService = axios.create({
-  baseURL: 'https://api.rawg.io/api/',
-  headers: {
-    'User-Agent': 'YourAppName',
-  },
-});
-
 export const fetchGames = async (searchTerm) => {
   try {
-    const response = await rawgService.get('games', {
-      params: {
-        key: clientId,
-        search: searchTerm,
-      },
+    const response = await axios.get('http://localhost:3001/games', {
+      params: { search: searchTerm },
     });
     return response.data.results ? response.data.results.map(game => ({
       name: game.name,
