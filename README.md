@@ -9,14 +9,14 @@ This website serves as a library for tracking game progression. It addresses the
  - Export and Import data as a JSON file.
 
 ## How to Run
- 1. Close the repository: `git clone https://github.com/egrythor/Game-Tracker.git`
+ 1. Clone the repository: `git clone https://github.com/egrythor/Game-Tracker.git`
  2. Navigate to the project folder: `cd '.\Game Tracker\'`
  3. Install dependencies: `npm install` or `yarn install`
  4. Start the app: `npm run dev` or `yarn run dev`
 
 ## Backend
 This project uses a local backend server. To use it:
- 1. Navigate to the `backend` folder: `cd .\backend\`
+ 1. Navigate to the `backend` folder: `'.\Game Tracker\backend\'`
  2. Install server dependencies: `npm install` or `yarn install`
  3. Start the server: `node server.js` (default port: 3001)
 
